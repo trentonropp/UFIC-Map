@@ -1,0 +1,471 @@
+<!-- Styles -->
+<style>
+  #chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+  /**
+   * Define SVG path for target icon
+   */
+  var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+
+  /**
+   * Create the map
+   */
+  var map = AmCharts.makeChart("chartdiv", {
+    "type": "map",
+    "projection": "winkel3",
+    "theme": "light",
+    "imagesSettings": {
+      "rollOverColor": "#089282",
+      "rollOverScale": 3,
+      "selectedScale": 3,
+      "selectedColor": "#089282",
+      "color": "#13564e"
+    },
+
+    "areasSettings": {
+      "unlistedAreasColor": "#15A892",
+      "outlineThickness": 0.1
+    },
+
+    "dataProvider": {
+      "map": "worldLow",
+      "images": [{
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Cuba
+        "latitude": 21.5218,
+        "longitude": -77.7812,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      }, {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Senegal
+        "latitude": 14.4974,
+        "longitude": -14.4524,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      }, {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Mali
+        "latitude": 17.5707,
+        "longitude": -3.9962,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+      {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Niger
+        "latitude": 17.6078,
+        "longitude": 8.0817,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Burkina Faso
+        "latitude": 12.2383,
+        "longitude": -1.5616,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Mauritania
+        "latitude": 21.0079,
+        "longitude": -10.9408,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Chad
+        "latitude": 15.4542,
+        "longitude": 18.7322,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //France
+        "latitude": 46.2276,
+        "longitude": 2.2137,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //
+        "latitude": 41.8719,
+        "longitude": 12.5674,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Leo Villalón",
+        //Spain
+        "latitude": 40.4637,
+        "longitude": -3.7492,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/leonardo-villal%C3%B3n-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Sussane Hill",
+        //Germany
+        "latitude": 51.1657,
+        "longitude": 10.4515,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/susanne-hill-phd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Vanessa Fayo",
+        //United States
+        "latitude": 37.0902,
+        "longitude": -95.7129,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/vanessa-fayo"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Martine Angrand",
+        //Haiti
+        "latitude": 18.9712,
+        "longitude": -72.2852,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/martine-j-angrand"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Ethel Porras",
+        //Nicaragua
+        "latitude": 12.8654,
+        "longitude": -85.2072,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/ethel-porras"
+      },{
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Katie Hyson",
+        //Wales
+        "latitude": 52.1307,
+        "longitude": -3.7837,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/katie-hyson"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Lyn Straka",
+        //Canada
+        "latitude": 56.1304,
+        "longitude": -106.3468,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/lyn-straka"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Angela Miller",
+        //Jamaica
+        "latitude": 18.1096,
+        "longitude": -77.2975,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/angela-miller-edd"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Brian Henry",
+        //South Korea
+        "latitude": 35.9078,
+        "longitude": 127.7669,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/brian-henry"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Brian Henry",
+        //France
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/brian-henry"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Jill Ranaivoson",
+        //Madagascar
+        "latitude": -18.7669,
+        "longitude": 46.8691,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/jill-ranaivoson"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Anuja Parikh",
+        //India
+        "latitude": 20.5937,
+        "longitude": 78.9629,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/anuja-parikh"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Anuja Parikh",
+        //Thailand
+        "latitude": 15.8700,
+        "longitude": 100.9925,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/anuja-parikh"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Paloma Rodriguez",
+        //Spain
+        "latitude": 41.3851,
+        "longitude": 2.1734,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/paloma-rodriguez"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Paloma Rodriguez",
+        //Italy
+        "latitude": 45.4408,
+        "longitude": 12.3155,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/paloma-rodriguez"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Paloma Rodriguez",
+        //UK
+        "latitude": 55.3781,
+        "longitude": -3.4360,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/paloma-rodriguez"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Amila Tica",
+        //Bosnia
+        "latitude": 43.9159,
+        "longitude": 17.6791,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/amila-tica"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Amila Tica",
+        //Turkey
+        "latitude": 38.9637,
+        "longitude": 35.2433,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/amila-tica"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Ren Liu",
+        //China
+        "latitude": 39.9042,
+        "longitude": 116.4074,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/ren-liu"
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+                 {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Maryshelly Quinones",
+        //Puerto Rico
+        "latitude": 18.2208,
+        "longitude": -66.5901,
+        "URL": "https://internationalcenter.ufl.edu/about-ufic/staff/maryshelly-quinones"
+      }/*,
+                {
+        "id": 1,
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "",
+        //
+        "latitude": ,
+        "longitude": ,
+        "URL": ""
+      },
+       {
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Martine Angrand",
+        "latitude": 18.9712,
+        "longitude": -72.2852,
+      }*/]
+    },
+
+    "export": {
+      "enabled": true
+    },
+
+    "listeners": [{
+      "event": "clickMapObject",
+      "method": function (event) {
+        if (currentObject && event.mapObject.id == currentObject.id) {
+          window.location.href = event.mapObject.URL;
+        }
+        currentObject = event.mapObject;
+      }
+    }]
+  });
+  var currentObject;
+
+  function clickObject(id) {
+    map.clickMapObject(map.getObjectById(id));
+  }
+
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
